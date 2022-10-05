@@ -17,7 +17,7 @@ console.log("정답: " + RandomNum);
 function gamePlayEvent() {
   let userValue = userInput.value;
   if(userValue<1 || userValue>100){
-    result.textContent="1~100사이의 숫자를 적어주쇼..😑"
+    result.textContent="1~100사이의 숫자만..😑"
     return
   }
   if(userValueList.includes(userValue)){
@@ -59,6 +59,7 @@ function resetEvent(){
     playBtn.disabled = false;
     userValueList = []
     chanceNum ="7"
+    result.textContent ="Up Down Game!"
 }
 
 function userValueResetEvent(){
