@@ -6,10 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="App.js"></script>
   </head>
   <body>
-    <h1>첫 번째 프로젝트 파일</h1>
-    <div>HTML</div>
+    <header>
+      <div id="container">
+        <h4>연습용 공간</h4>
+        <nav>
+          <ul> 
+            <li><a href="게임설명.html">공간</a></li>
+            <li><a href="#">이름</a></li>
+            <li><a href="#">정렬</a></li>
+            <li><a href="#">하자</a></li>
+            <li><a href="#">호호</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <div id="game-container">
+      <h1> Up↑ Down↓ Game </h1>
+      <div id="result"></div>
+      <div id="chance">총 7번 기회가 있습니다.</div>
+      <input type="number" id="user-input" value="2" />
+      <button id="play-btn">도전</button>
+      <button id="reset">초기화</button>
+
   </body>
+  <script src="App.js"></script>
 </html>
