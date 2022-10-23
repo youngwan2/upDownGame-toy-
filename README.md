@@ -1,4 +1,4 @@
-# project-one
+# 업다운게임
 
 ▶ 개요 및 현황
 - 간단하게 업다운 게임을 즐길 수 있습니다.
@@ -11,10 +11,12 @@
 - 기회를 모두 소진하면 사용자 입력창과 버튼이 잠금되도록 설정하였습니다.
 - 사용자가 랜덤값을 맞추면 게임이 정상종료되며, 초기화버튼을 누르면 새롭게 랜덤값이 설정되도록 하였습니다.
 
+▶ 도메인 사이트
+https://updowngamesite.netlify.app/
+
 ▶ 시연 영상
 
 https://user-images.githubusercontent.com/107159871/197369476-9d9f2564-0afd-43fc-bf72-11fccf760ec9.mp4
 
 
-▶ 도메인 사이트
-https://updowngamesite.netlify.app/
+
