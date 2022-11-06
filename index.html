@@ -8,24 +8,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div id="container">
-        <nav>
-          <ul> 
-            <li><a href="게임설명.html">게임안내</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    
+    <div class="audio"><audio autoplay controls>
+      <source src="./배경음악.mp3" type="audio/mp3"></audio>
+     </div>
     <div id="game-container">
-      <h1> Up Down Game </h1>
-      <div id="result">환영합니다!</div>
-      <div id="chance">총 7번 기회가 있습니다.</div>
-      <input type="number" id="user-input" placeholder="1~100" />
-      <button id="play-btn">도전</button>
-      <button id="reset">초기화</button>
-
+      <div id="result" style="color:red">"Welcome..."</div>   
+      <div id="chance"></div>
+      <input type="number" id="user-input" placeholder="1 ~ 100 사이" />
+      
+      <div class="btn-set">
+        <button id="play-btn">도전</button>
+        <button id="reset">재도전</button>
+      </div>
+    </div>
   </body>
   <script src="App.js"></script>
 </html>

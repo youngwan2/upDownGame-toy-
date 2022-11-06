@@ -1,122 +1,105 @@
 *{
     margin:0;
     padding: 0;
-    text-decoration: none;
     list-style: none;
 }
 
-/**헤드 컨테이너*/
-header #container{
-    display: flex;
-    justify-content: center;
-    background-color: #000000;
-    color:white;
-    height: 50px;
-    align-items: center;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-header #container h4{
-    margin: 0;
-}
-header #container nav ul{
-    margin: 0;
-}
-header #container nav li{
-    display: inline-block;
-    justify-content: space-between;
-}
-header #container nav li a{
-    color: white;
-}
-header #container nav li a:hover{
-    color:beige;
-    border-bottom: 1px solid burlywood;
-    
-}
-
-/**컨테이너 */
-#game-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 830px;
-    text-align: center;
-    justify-content: center;
-    background-image: url('./mountains.png');
-}
-
-/** 제목*/
-#game-container h1{
-    margin-bottom: 30px;
-    border: 2px solid #5b5757;
-    background-color: #000000;
-    padding: 10px;
-    color:white;
-    
-}
-/**플레이 버튼 */
-#game-container #play-btn{
-    width: 350px;
-    height: 35px;
-    border: none;
-    font-weight: bold; font-size: 20px;
-}
-#game-container #play-btn:hover{background-color: bisque;}
-
-/**초기화 */
-#game-container #reset{
-    width: 350px;
-    height: 35px;
-    border: none;
-    font-weight: bold; font-size: 20px;
-}
-#game-container #reset:hover{background-color: bisque;}
-
-/**결과창 */
-#result{
-    font-size: 1.5rem ;
-    font-weight: bold;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 301px;
-    height: 36px;
-    border:5px ridge black ; border-radius: 15px;
-    padding: 5rem;
-    background-image: url('./모니터.png');
+/* 배경이미지 */
+body{
+    background-image: url(./술게임배경.png);
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-color: #5b5757 ;
-    
 }
 
-/**유저 입력창 */
-#user-input{
-    width: 100px;
-    height: 35px;
-    text-align: center; font-size: 1.5rem;
-    margin-bottom: 18px;   
+/* 배경음악 */
+.audio{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: 50px;
 }
 
-#user-input:hover{
-    border-color: brown;
-}
 
-/**찬스창 */
-#chance{
-    font-weight: bold;
-    margin-top: 20px; padding-top: 10px;
-    text-align: center; font-size: 1.5rem;
-    border: none;
-    width: 350px;
-    height: 35px;
-    margin-bottom: 1rem;
-    color: black;
+/**---------------게임 컨테이너--------------------  */
+
+#game-container{
+    margin-top: 3rem;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
 }
 
-@media screen and (min-width:0) and (max-width:504px){
-    #result{
-        width:50%
+#chance{
+    height: 45px;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color:rgb(0, 0, 0);
+}
 
-    }
-} 
+
+/* 결과창 */
+#result{
+    margin-top: -1.5rem;
+    background-image: url('./hello.gif');
+    background-position: center;
+    background-size: cover;
+    width: 90%;
+    align-self: center;
+    height:580px ;
+    border: 2px ridge black;
+    background-color: rgb(144, 224, 166);
+    border-radius: 10px;
+    line-height: 450px;
+    font-size: 3rem;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-style:oblique;
+}
+
+
+/* 유저 입력창 */
+#user-input,button{
+    text-align: center;
+    height: 50px;
+    width: 20%;
+    align-self: center;
+    border-radius: 100px;
+}
+
+#user-input{
+    background-color: rgb(250, 160, 14);
+    width: 40%;
+    color:rgb(232, 237, 231);
+    font-weight: 700;
+    font-size: 25px;
+
+}
+
+#user-input::placeholder{
+    color:rgb(255, 255, 255);
+    font-size: 17px;
+}
+
+
+/* 도전, 재도전 버튼 영역 */
+button{
+    margin: 0.5px;
+    font-size: 17px;
+    width: 20%;
+}
+
+#play-btn{
+    background-color: rgb(245, 245, 245);
+    margin-top: 20px;
+}
+
+#play-btn:hover{
+    background-color: rgb(70, 205, 223);
+}
+
+#reset:hover{
+    background-color: tomato;
+}
