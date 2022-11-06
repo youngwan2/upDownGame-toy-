@@ -47,25 +47,25 @@ function gamePlayEvent() {
   if (userValue > RandomNum) {
     result.textContent = "Down↓";
     result.style.backgroundImage="url(./come-on.gif)"
-    result.style.backgroundPosition="center"
-    result.style.backgroundSize="cover"
     result.style.color = "rgb(245, 16, 16)"
+    backgroundSet();
 
   } else if (userValue < RandomNum) {
     result.textContent="Up!!"
     result.style.color="blue"
     result.style.backgroundImage="url(./up.gif)"
-    result.style.backgroundPosition="center"
-    result.style.backgroundSize="cover"
+    backgroundSet();
 
   } else {
     result.textContent = '"아깝다.. 살았네"';
     result.style.fontSize="30px"
     result.style.backgroundImage="url(./음주섞음.gif)"
-    result.style.backgroundPosition="center"
-    result.style.backgroundSize="cover"
     result.style.color = "red"
-    chance.textContent = "Victory!"
+    chance.textContent = "와.. 이걸 맞추네? 천재인가??.."
+    backgroundSet();
+    userInput.disabled = true;
+    playBtn.disabled = true;
+    return
   };
 
     userValueList.push(userValue)
@@ -99,6 +99,7 @@ function userValueResetEvent(){
 }
 
 
+//경고 메시지
 function warning(){
   result.innerText=""
   result.style.backgroundImage="url(./경고이미지.gif)"
@@ -107,7 +108,7 @@ function warning(){
 };
 
 
-
+//실패 메시지
 function fail(){
   result.style.backgroundImage="url(./실패.gif)"
   result.style.backgroundPosition="center"
@@ -116,8 +117,15 @@ function fail(){
   result.style.color="red"
 };
 
+function backgroundSet(){
+  result.style.backgroundPosition="center"
+  result.style.backgroundSize="cover"
+}
 
-// 게임시작전 메시지
+
+
+
+// 게임시작전 안내 메시지
 
 let txt = ['업 다운 게임에 오신걸 환영합니다.','목숨은 총 7개 입니다.','그럼 즐거운 시간되시길 바랍니다.']
 let split = txt[0].split('');
