@@ -2,7 +2,7 @@
 
 ▶ 개요 및 현황
 - 간단하게 업다운 게임을 즐길 수 있습니다.
-- 스타일 적용이 정적인 느낌이라 게임을 하는 데 분위기가 살지 않을 수 있습니다(추후 더 깔끔하게 수정해볼 예정입니다).
+- 2011년 11월 6일 경) 전체적인 UI 수정
 
 
 ▶ 기능
@@ -14,9 +14,10 @@
 ▶ 도메인 사이트
 https://updowngamesite.netlify.app/
 
-▶ 시연 영상
-
-https://user-images.githubusercontent.com/107159871/197369476-9d9f2564-0afd-43fc-bf72-11fccf760ec9.mp4
+▶ 이미지
 
 
+![업다운게임((모바일)](https://user-images.githubusercontent.com/107159871/200167562-7cf5950b-245e-4259-b4d1-c849ec040a58.PNG)
 
+
+![업다운게임(시작화면)](https://user-images.githubusercontent.com/107159871/200167565-f7644460-de80-4bc5-a9ec-e4a8c0413c0d.PNG)
